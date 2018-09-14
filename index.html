@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,400" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <nav>
+            <span><a data-scroll href="#top">Online Voting System</a></span>
+            <ul>
+                <li><a data-scroll href="#product">Product</a></li>
+                <li><a data-scroll href="#stakeholders">Stakeholders</a></li>
+                <li><a data-scroll href="#approach">Approach</a></li>
+                <li><a data-scroll href="#philosophy">Philosophy</a></li>
+            </ul>
+        </nav>
+
+        <div class="body">
+            <article>
+                <h2>Product</h2>
+                <a id="product"></a>
+            </article>
+            <article>
+                <h2>Stakeholders</h2>
+                <a id="stakeholders"></a>
+            </article>
+            <article>
+                <h2>Approach</h2>
+                <a id="approach"></a>
+            </article>
+            <article>
+                <h2>About</h2>
+                <a id="about"></a>
+                <h2>Philosophy</h2>
+            </article>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            window.onload = function() {
+                var scroll = new SmoothScroll('a[href*="#"]', {
+                    easing: 'easeInOutCubic', // Easing pattern to use
+                    speed: 300, // Integer. How fast to complete the scroll in milliseconds
+                    clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+                });
+            };
+        </script>
+    </body>
+</html>
